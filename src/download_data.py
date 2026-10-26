@@ -6,7 +6,7 @@ from pathlib import Path
 RAW_DIR = Path("data/raw")
 LEAGUE = "E0"
 START_YEAR = 2018
-END_YEAR = 2025
+END_YEAR = 2027
 
 def season_code(year):
     return str(year)[2:] + str(year+1)[2:]

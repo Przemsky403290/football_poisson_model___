@@ -8,7 +8,7 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = PROJECT_ROOT / "data" / "raw"
-MY_COLLS = ["Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR", "B365H", "B365D", "B365A"]
+MY_COLLS = ["Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR", "B365H", "B365D", "B365A", "HC", "AC", "HST", "AST", "HS", "AS"]
 PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"   # make new directory
 
 RENAME = {
@@ -21,6 +21,12 @@ RENAME = {
     "B365H": "Home_odd",
     "B365D" : "Draw_odd",
     "B365A" : "Away_odd",
+    "HC" : "Home_corners",
+    "AC" : "Away_corners",
+    "HST" : "Home_shots_on_target",
+    "AST": "Away_shots_on_target",
+    "HS" : "Home_shots",
+    "AS" : "Away_shots"
 
 }
 
